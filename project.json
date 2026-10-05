@@ -1,0 +1,74 @@
+{
+  "description": "A procedural purple voxel landscape that reacts to system audio with concentric rings, spiral waves, bright peaks, and bloom.",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "sensitivity": {
+        "max": 3,
+        "min": 0.5,
+        "order": 10,
+        "text": "Audio sensitivity",
+        "type": "slider",
+        "value": 1.35
+      },
+      "motionIntensity": {
+        "max": 2,
+        "min": 0,
+        "order": 20,
+        "text": "Motion intensity",
+        "type": "slider",
+        "value": 1
+      },
+      "quality": {
+        "options": [
+          { "label": "Low", "value": "low" },
+          { "label": "Balanced", "value": "balanced" },
+          { "label": "High", "value": "high" }
+        ],
+        "order": 30,
+        "text": "Render quality",
+        "type": "combo",
+        "value": "balanced"
+      },
+      "fpsLimit": {
+        "options": [
+          { "label": "30 FPS", "value": "30" },
+          { "label": "60 FPS", "value": "60" }
+        ],
+        "order": 40,
+        "text": "Frame rate",
+        "type": "combo",
+        "value": "60"
+      },
+      "bloom": {
+        "order": 50,
+        "text": "Bloom glow",
+        "type": "bool",
+        "value": true
+      },
+      "idleMotion": {
+        "order": 60,
+        "text": "Gentle motion during silence",
+        "type": "bool",
+        "value": true
+      },
+      "primaryColor": {
+        "order": 70,
+        "text": "Voxel color",
+        "type": "color",
+        "value": "255 31 194"
+      },
+      "backgroundColor": {
+        "order": 80,
+        "text": "Background color",
+        "type": "color",
+        "value": "16 0 25"
+      }
+    },
+    "supportsaudioprocessing": true
+  },
+  "preview": "preview.gif",
+  "title": "Purple Voxel Pulse",
+  "type": "web",
+  "visibility": "private"
+}

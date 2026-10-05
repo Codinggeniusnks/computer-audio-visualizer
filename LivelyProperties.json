@@ -1,0 +1,56 @@
+{
+  "sensitivity": {
+    "max": 3,
+    "min": 0.5,
+    "step": 0.05,
+    "text": "Audio sensitivity",
+    "type": "slider",
+    "help": "Increase this when quiet music produces too little movement.",
+    "value": 1.35
+  },
+  "motionIntensity": {
+    "max": 2,
+    "min": 0,
+    "step": 0.05,
+    "text": "Motion intensity",
+    "type": "slider",
+    "help": "Controls the height and strength of audio-driven movement.",
+    "value": 1
+  },
+  "quality": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Render quality",
+    "help": "Balanced uses 8,192 voxel columns.",
+    "items": ["Low", "Balanced", "High"]
+  },
+  "fpsLimit": {
+    "type": "dropdown",
+    "value": 1,
+    "text": "Frame rate",
+    "help": "Use 30 FPS to reduce power usage.",
+    "items": ["30 FPS", "60 FPS"]
+  },
+  "bloom": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Bloom glow",
+    "help": "Disable this for the largest performance improvement."
+  },
+  "idleMotion": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Gentle motion during silence",
+    "help": "Keeps the voxel field subtly alive when no music is playing."
+  },
+  "primaryColor": {
+    "text": "Voxel color",
+    "type": "color",
+    "value": "#ff1fc2"
+  },
+  "backgroundColor": {
+    "text": "Background color",
+    "type": "color",
+    "value": "#100019"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#100019">
+  <title>Purple Voxel Pulse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-host="detecting">
+  <canvas id="wallpaper-canvas" aria-label="Purple voxel audio visualizer"></canvas>
+
+  <section id="demo-panel" class="demo-panel" aria-label="Browser preview controls">
+    <div class="demo-title-row">
+      <div>
+        <p class="eyebrow">Browser preview</p>
+        <h1>Purple Voxel Pulse</h1>
+      </div>
+      <span id="host-badge" class="badge">Detecting host</span>
+    </div>
+
+    <p class="demo-copy">Use the generated beat, or choose a music file from this computer. Local audio never leaves the browser.</p>
+
+    <div class="button-row">
+      <button id="demo-toggle" type="button">Pause demo beat</button>
+      <label class="file-button" for="audio-file">Choose local audio</label>
+      <input id="audio-file" type="file" accept="audio/*">
+    </div>
+
+    <audio id="local-audio" controls preload="metadata"></audio>
+
+    <label class="range-row" for="demo-sensitivity">
+      <span>Sensitivity</span>
+      <output id="sensitivity-value">1.35×</output>
+    </label>
+    <input id="demo-sensitivity" type="range" min="0.5" max="3" step="0.05" value="1.35">
+
+    <div class="status-row">
+      <span id="audio-source">Synthetic audio</span>
+      <span id="fps-readout">-- FPS</span>
+    </div>
+  </section>
+
+  <div id="unsupported" class="unsupported" role="alert" hidden>
+    <strong>WebGL2 is unavailable.</strong>
+    <span>Switch the wallpaper host to its Chromium/WebView2 renderer or update the graphics driver.</span>
+  </div>
+
+  <script src="audio-engine.js"></script>
+  <script src="settings-host.js"></script>
+  <script src="renderer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

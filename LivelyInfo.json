@@ -1,0 +1,15 @@
+{
+  "AppVersion": "2.2.0.0",
+  "Title": "Purple Voxel Pulse",
+  "Thumbnail": "thumbnail.jpg",
+  "Preview": "preview.gif",
+  "Desc": "A procedural purple voxel landscape that reacts to system audio.",
+  "Author": "Custom wallpaper generated with Codex",
+  "License": "MIT License; see LICENSE.txt",
+  "Contact": null,
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": "--audio --pause-event true",
+  "Tags": ["audio", "visualizer", "webgl", "purple"],
+  "IsAbsolutePath": false
+}
